@@ -1,6 +1,7 @@
 let currentResult = 0;
 
 // let calculationDescription = '(' + currentResult + ' + 10) * 3 /2 - 1';
+// Template literal with back ticks `` allows to use variables inside a string `${variableName} + 32 `
 let calculationDescription =`( ${currentResult} + 10 ) * 3 / 2 - 1`;
 
 
@@ -15,3 +16,9 @@ function add(num1, num2) {
 
 currentResult = add(1,2); 
 outputResult(currentResult, calculationDescription);
+
+// Hoisting in JS
+// all JS variables are moved to the top at time of compilation before code is executed.
+
+// Variable shadowing
+//  same variable defined with var or let keyword in global can be used to define another variable inside local scope if we initialized it with let keyword (can't with var)
